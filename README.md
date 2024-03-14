@@ -75,3 +75,10 @@ https://github.com/Danielbzg/synergy-connect-server
 6. Soporte multilingüe.
 7. Soporte para archivos adjuntos.
 8. Funcionalidades de usuario avanzadas: Implementa funcionalidades como la gestión de usuarios, perfiles de usuario personalizados, autenticación y autorización para garantizar la seguridad y la privacidad de los datos de los usuarios.
+
+## Capturas de la aplicación
+![alt text](src/assets/Captura1.png)
+![alt text](src/assets/Captura2.png)
+![alt text](src/assets/Captura3.png)
+![alt text](src/assets/Captura4.png)
+![alt text](src/assets/Captura5.png)

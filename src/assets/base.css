@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.allNotes{
+  width: 300px;
+  padding: 4px;
+  background-color: #B4ADEA;
+  border-radius: 10px;
+  border: 1px;
+  border-style: double;
+  text-align: center;
+  margin: 5px;
+}
+
+.orderBtnNotes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px 0 5px 0;
+}
+
+.btnDelete {
+  background-color: rgb(145, 32, 32);
+  font-size: medium;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px;
+  border-style: double;
+  border-color: #181818;
+}
+
+.btnUpdate {
+  background-color: gray;
+  font-size: medium;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px;
+  border-style: double;
+  border-color: #181818;
+}
+

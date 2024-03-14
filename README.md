@@ -1,3 +1,4 @@
+![alt text](src/assets/logo_colaborativo.png)
 # Synergy Connect
 
 Synergy Connect es una aplicación web construida con Vue.js y TypeScript, diseñada para mejorar la colaboración y comunicación dentro de equipos de trabajo. La aplicación utiliza WebSockets para permitir una comunicación en tiempo real entre los usuarios conectados.

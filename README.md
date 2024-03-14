@@ -27,19 +27,18 @@ El proyecto sigue una estructura modular, con la lógica del WebSocket y la cone
 git clone https://github.com/danielbzg/synergy-connect-client.git
 ```
 
-2. Instala las dependencias:
+2. Instala las dependencias de node:
 
 ```
-cd synergy-connect
 npm install
 ```
 
 ## Uso
 
-1. Inicia el servidor de desarrollo:
+1. Inicia el servidor del cliente:
 
 ```
-npm run start
+npm run dev
 ```
 
 2. Accede a la aplicación en tu navegador:
@@ -48,7 +47,10 @@ npm run start
 http://localhost:5173
 ```
 
-Obviamente para utilizar las funcionalidades tendrás que levantar docker y el servidor que contiene toda la lógica:
+Obviamente para utilizar las funcionalidades tendrás que levantar docker y el servidor que contiene toda la lógica del proyecto de Backend:
+```
+https://github.com/Danielbzg/synergy-connect-server
+```
 
 
 

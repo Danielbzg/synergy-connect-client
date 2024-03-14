@@ -30,21 +30,21 @@
     <div>
       <custom-card frontTitle="" frontImage="./src/assets/Foro.png" frontAlt="" frontName="Foro"
         backTitle=""
-        backContent="El foro o chat colaborativo es un espacio digital donde los miembros del equipo pueden compartir actualizaciones de tareas y coordinar esfuerzos en proyectos." />
+        backContent="El foro o chat es un espacio digital donde los miembros del equipo pueden compartir actualizaciones de tareas y coordinar esfuerzos." />
     </div>
     </div>
 
     <div class="footer">
       <div class="ordStatusServer">
-        <h1>Status Web: </h1>
+        <h2>Status Web: </h2>
         <div class="orgDotWithText">
           <p id="dot-server"></p>
           <p id="server-status"></p>
         </div>
       </div>
-      <div class="userSeparator">
-        <h3>Connected users</h3>
-        <div id="clients-ul-home"></div>
+      <div class="tittleUsers">
+        <h2>Connected users</h2>
+        <div id="clients-ul-home">Connected users: </div>
       </div>
 
     </div>
@@ -129,8 +129,13 @@
    align-items: center;
 }
 
+.tittleUsers{
+  display: flex;
+  flex-direction: row;
+}
+
   #clients-ul-home{
-    width: 70vw;
+    width: 60vw;
     max-height: 100vh;
     display: flex;
     flex-direction: row;

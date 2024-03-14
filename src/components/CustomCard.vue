@@ -63,7 +63,7 @@ export default {
 
 .flipCard {
     background-color: transparent;
-    height: 15rem;
+    height: 12rem;
     /* Es necesario una altura para que aparezca en la página */
     border: 0px;
     perspective: 100rem;
@@ -98,8 +98,8 @@ export default {
     /* Safari */
     backface-visibility: hidden;
     padding: 1rem;
-    max-width: 15rem;
-    max-height: 15rem;
+    width: 12rem;
+    height: 12rem;
     border-width: 0.5rem;
     /*background: linear-gradient(to bottom, rgba(135, 207, 235, 0.8), rgba(255, 255, 255, 0.5) 80%);*/
     display: flex;
@@ -116,7 +116,6 @@ export default {
 
 .flipCardBack {
     /* Estructura específica de la cara trasera */
-    /*background-color: dodgerblue;*/
     color: black;
     transform: rotateY(180deg);
     border-style: outset;
@@ -127,8 +126,8 @@ export default {
 }
 
 .cards__image {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
 }
 
 .cards__tittle {

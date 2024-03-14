@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import 'animate.css';
 </script>
@@ -64,6 +64,7 @@ header {
   display: flex;
   animation: changeColor 20s infinite;
   -webkit-box-reflect: below -25px linear-gradient(transparent, transparent, rgba(100,100,100,0.35));
+  font-family: MadimiOne;
 }
 
 nav {

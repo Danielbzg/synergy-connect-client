@@ -8,6 +8,7 @@
   background-image: url(./pattern2.png);
   background-repeat: repeat;
   background-size: 15%;
+  font-family: Raleway;
 }
 
 a,
@@ -16,6 +17,20 @@ a,
   color: rgb(99, 57, 138);
   transition: 0.4s;
   padding: 3px;
+}
+
+h1, h2 {
+  font-family: MadimiOne;
+}
+
+@font-face {
+  font-family: MadimiOne;
+  src: url(./fonts/MadimiOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
 }
 
 

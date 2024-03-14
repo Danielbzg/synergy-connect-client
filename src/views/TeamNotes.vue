@@ -4,7 +4,7 @@
         <div class="designBlock">
         <form id="noteForm">
           <h3 class="animate__animated animate__pulse">Añadir nota</h3>
-          <div>
+          <div class="orderInputs">
             <input type="text" id="title" name="title" placeholder="Escribe un título" />
             <input name="description" id="description" rows="2" placeholder="Escribe una descripción"></input>
           </div>
@@ -21,6 +21,11 @@
 </template>
 
 <style scoped>
+
+input{
+  font-family: Raleway;
+  margin: 5px 0;
+}
 
 .mainNotes{
   padding: 1rem;
@@ -55,6 +60,11 @@
 
 #noteForm {
   height: 200px;
+}
+
+.orderInputs{
+  display: flex;
+  flex-direction: column;
 }
 
 #noteForm>button{

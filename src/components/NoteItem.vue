@@ -10,6 +10,12 @@
     </div>
   </template>
   
+  <style scoped>
+    button{
+      font-family: Raleway;
+    }
+  </style>
+
   <script lang="ts">
   import { Main } from '@/main';
 import { Socket } from 'socket.io-client';

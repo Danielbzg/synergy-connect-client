@@ -13,7 +13,7 @@
       </div>
   </div>
     <div class="sectionAllNotes">
-      <h1>Notas</h1>
+      <h1 class="animate__animated animate__zoomInDown">Notas</h1>
       <div id="notesPublished"></div>
     </div>
     
@@ -87,10 +87,10 @@ input{
 }
 
 #notesPublished {
-  max-width: 8000px;
+  width: 90vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
@@ -108,7 +108,6 @@ import { Socket } from 'socket.io-client'
 import { createApp, defineComponent } from 'vue'
 
 let isMounted: boolean = false
-let clients: string[] = [];
 const notas: Map<string, { id: string; title: string; description: string }> = new Map<
   string,
   { id: string; title: string; description: string }
@@ -118,7 +117,7 @@ export default defineComponent({
     mounted() {
     isMounted = true
     notas.forEach((note) => {
-      addNoteInDom(note)
+      addNoteInDOM(note)
     })
     },
     unmounted() {
@@ -142,12 +141,12 @@ export default defineComponent({
 export const addNote = (note: { id: string; title: string; description: string }) => {
   notas.set(note.id, note)
   if (isMounted) {
-    addNoteInDom(note)
+    addNoteInDOM(note)
   }
 }
 
 //Añadir componente al DOM
-const addNoteInDom = (note: { id: string; title: string; description: string }) => {
+const addNoteInDOM = (note: { id: string; title: string; description: string }) => {
     const notesPublished = document.querySelector('#notesPublished')!
     const noteItemComponent = createApp(NoteItem, { note: note }).mount(document.createElement('div'));
     notesPublished.appendChild(noteItemComponent.$el);
@@ -178,23 +177,5 @@ export const removeNote = (noteID: string) => {
   }
 }
 
-
-export const clientConnectedForNotes = (clientsResult: string[]) => {
-  clients = clientsResult;
-  if (isMounted) {
-    loadClients();
-  }
-}
-
-const loadClients = () =>{
-  const clientsUL = document.querySelector('#clients-ul')!
-    let clientsHtml = ''
-      clients.forEach((clientId) => {
-        clientsHtml += `
-              <li>${clientId}</li>
-          `
-      })
-    clientsUL.innerHTML = clientsHtml
-}
 </script>
 

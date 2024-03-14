@@ -9,6 +9,7 @@
   background-repeat: repeat;
   background-size: 15%;
   font-family: Raleway;
+  overflow-x: hidden;
 }
 
 a,

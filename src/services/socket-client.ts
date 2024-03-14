@@ -1,5 +1,5 @@
 import { Manager, Socket } from 'socket.io-client'
-import { addNote, clientConnectedForNotes, removeNote, updateNote } from '@/views/TeamNotes.vue'
+import { addNote, removeNote, updateNote } from '@/views/TeamNotes.vue'
 import { receiveMessage } from '@/views/Forum.vue'
 import { clientConnectedForHome, reloadStatus } from '@/views/HomeView.vue'
 export class SocketClient {
@@ -32,7 +32,6 @@ export class SocketClient {
     //Función para actualizar el id del cliente
     const loadIdClient = () => {
       socket.on('clients-updated', (clients: string[]) => {
-      clientConnectedForNotes(clients)
       clientConnectedForHome(clients)
       })
     }

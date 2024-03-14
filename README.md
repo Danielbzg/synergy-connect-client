@@ -65,3 +65,13 @@ https://github.com/Danielbzg/synergy-connect-server
 5. Abre un Pull Request.
 
 
+## Futuras implementaciones
+
+1. Notificaciones en tiempo real: Amplía el sistema de WebSocket para incluir notificaciones en tiempo real, como alertas para nuevas tareas asignadas, mensajes en el foro, o actualizaciones en el tablero de notas. 
+2. Funciones de búsqueda y filtrado en todas las secciones de la aplicación para que los usuarios puedan encontrar rápidamente la información que necesitan, ya sea en el tablero de notas, el foro o la lista de usuarios conectados.
+3. Poder cambiar el nombre en el foro. 
+4. Que haya una persistencia de mensajes en el chat más allá de que se cierre el navegador o no, ya que ahora mismo solo se conservan los mensajes mientras estés conectado, si cierras el navegador pierdes los mensajes.
+5. Personalización de temas y estilos para que los usuarios puedan ponerla a su gusto.
+6. Soporte multilingüe.
+7. Soporte para archivos adjuntos.
+8. Funcionalidades de usuario avanzadas: Implementa funcionalidades como la gestión de usuarios, perfiles de usuario personalizados, autenticación y autorización para garantizar la seguridad y la privacidad de los datos de los usuarios.

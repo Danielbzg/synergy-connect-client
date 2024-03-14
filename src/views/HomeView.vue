@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="tittleUsers">
-        <h2>Connected users</h2>
+        <h2>Connected users: </h2>
         <div id="clients-ul-home">Connected users: </div>
       </div>
 
